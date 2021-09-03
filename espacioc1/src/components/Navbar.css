@@ -1,0 +1,81 @@
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+.logo{
+    border-radius: 50%;
+    margin-top: 7px;
+    margin-right: -130px;
+    margin-left: 30px;
+    float: left;
+    clear: both;
+    line-height: 121px;
+    height: 140px;
+}
+
+.nav-bar{
+    font-size: 17px;
+    height: 121px;
+    color: white;
+    border-radius: 0px 0px 10px 12px;
+    margin-top: -15px;
+    background-color: #2d3436;
+background-image: linear-gradient(315deg, #1d1d1d 0%, #222222 74%);
+}
+
+.nav{
+    margin-top: 45px;
+    list-style: none;
+    display: inline-block;
+}
+
+.nav .lis{
+    padding-top: 10px;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    padding-right: 40px;
+    display: inline-block;
+}
+
+.nav-bar  .nav .lis .links{
+    opacity: 0.90;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s;
+}
+
+.nav .lis .links:hover{
+    opacity: 1;
+}
+
+.nav .lis .links::before{
+    transition: 300ms;
+    height: 2px;
+    content: ' ';
+    position: absolute;
+    background-color: white;
+}
+
+.nav .lis .links-ltr::before{
+    width: 0%;
+    bottom: 0px;
+}
+
+.nav .lis .links-ltr:hover::before{
+    width: 100%;
+}
+
+.nav .lis .links-ltr:active{
+    color: rgb(253, 130, 130);
+}
+
+.switcher{
+    margin-left: -100px;
+    float: right;
+    margin-right: 40px;
+    margin-top: 35px;
+    height: 60px;
+}
+
